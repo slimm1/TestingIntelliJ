@@ -17,6 +17,11 @@ public class Main {
         this.year=year;
     }
 
+    /**
+     * @param a integer
+     * @param b integer
+     * @return varía segun los condicionales
+     */
     public static double metodoCajaBlanca(int a, int b){
 
         double op = 0;
@@ -41,5 +46,6 @@ public class Main {
         }
         return op;
     }
+
 
 }
