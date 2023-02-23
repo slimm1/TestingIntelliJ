@@ -57,5 +57,11 @@ public class Main {
         return "no coincide";
     }
 
+    public void compareName(){
+        Main m2 = new Main("Carlos", 13, 3000);
+        Main m3 = new Main(m2.getNameByAge(12),12,2000);
+
+    }
+
 
 }
