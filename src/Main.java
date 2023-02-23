@@ -10,7 +10,6 @@ public class Main {
             System.out.println(metodoCajaBlanca(-1,-3));
 
     }
-
     public Main(String name, int age, int year){
         this.name=name;
         this.age=age;
@@ -21,6 +20,9 @@ public class Main {
         return age;
     }
 
+    public String getName(){
+        return name;
+    }
     /**
      * @param a integer
      * @param b integer
@@ -57,10 +59,13 @@ public class Main {
         return "no coincide";
     }
 
-    public void compareName(){
+    public boolean compareName(){
         Main m2 = new Main("Carlos", 13, 3000);
         Main m3 = new Main(m2.getNameByAge(12),12,2000);
-
+        if(m2.getName().equalsIgnoreCase(m3.getName())){
+            return true;
+        }
+        return false;
     }
 
 
