@@ -1,3 +1,8 @@
+/**
+ * @author Martin Ramonda
+ * @since 23/02/23
+ * @version 1.0
+ */
 public class Main {
     String name;
     int year, age;
