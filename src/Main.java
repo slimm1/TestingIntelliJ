@@ -59,6 +59,10 @@ public class Main {
         return "no coincide";
     }
 
+    /**
+     *
+     * @return true si coinciden los nombres
+     */
     public boolean compareName(){
         Main m2 = new Main("Carlos", 13, 3000);
         Main m3 = new Main(m2.getNameByAge(12),12,2000);
@@ -67,6 +71,7 @@ public class Main {
         }
         return false;
     }
+
 
 
 }
