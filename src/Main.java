@@ -10,6 +10,13 @@ public class Main {
             System.out.println(metodoCajaBlanca(-1,-3));
 
     }
+
+    /**
+     *
+     * @param name nombre
+     * @param age edad
+     * @param year año de nacimiento
+     */
     public Main(String name, int age, int year){
         this.name=name;
         this.age=age;
@@ -53,12 +60,22 @@ public class Main {
         return op;
     }
 
+    /**
+     *
+     * @param age la edad
+     * @return el nombre si coinciden
+     */
+
     public String getNameByAge(int age){
         Main m = new Main("Carlos",12,2000);
         if(m.getAge()==age){ return "Carlos";}
         return "no coincide";
     }
 
+    /**
+     *
+     * @return true si coinciden los nombres
+     */
     public boolean compareName(){
         Main m2 = new Main("Carlos", 13, 3000);
         Main m3 = new Main(m2.getNameByAge(12),12,2000);
@@ -72,6 +89,7 @@ public class Main {
         if(a>0){ return a+b;}
         return 0;
     }
+
 
 
 }
