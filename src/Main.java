@@ -10,6 +10,13 @@ public class Main {
             System.out.println(metodoCajaBlanca(-1,-3));
 
     }
+
+    /**
+     *
+     * @param name nombre
+     * @param age edad
+     * @param year año de nacimiento
+     */
     public Main(String name, int age, int year){
         this.name=name;
         this.age=age;
