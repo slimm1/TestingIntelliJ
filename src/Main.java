@@ -17,6 +17,10 @@ public class Main {
         this.year=year;
     }
 
+    public int getAge(){
+        return age;
+    }
+
     /**
      * @param a integer
      * @param b integer
@@ -28,7 +32,7 @@ public class Main {
 
         if( (a>b) && (a>0) ){
 
-            op = b/new Double(a);
+            op = b/ (double) a;
 
             System.out.println("El cociente es " + op);
         }
@@ -45,6 +49,12 @@ public class Main {
             op = a;
         }
         return op;
+    }
+
+    public String getNameByAge(int age){
+        Main m = new Main("Carlos",12,2000);
+        if(m.getAge()==age){ return "Carlos";}
+        return "no coincide";
     }
 
 
