@@ -53,6 +53,12 @@ public class Main {
         return op;
     }
 
+    /**
+     *
+     * @param age la edad
+     * @return el nombre si coinciden
+     */
+
     public String getNameByAge(int age){
         Main m = new Main("Carlos",12,2000);
         if(m.getAge()==age){ return "Carlos";}
